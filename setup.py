@@ -9,7 +9,7 @@ setup(
     description="SQLite3 Database Multiple File Manager",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url="URL do repositório do seu projeto",
+    url="https://github.com/Guisilcol/milho-multi-sqlite3-manager",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
