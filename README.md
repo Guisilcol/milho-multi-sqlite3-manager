@@ -13,15 +13,12 @@ When "to_dataframe" is used, the result is a Pandas DataFrame. The query is prev
 
 ```python
 
-from multisqlite3manager import get_connection, print_databases, print_tables
-import pandas as pd 
+from multisqlite3manager import print_databases, print_tables, to_dataframe
 
-connection = get_connection()
-print_databases(connection)
-print_tables(connection)
+print_databases()
+print_tables("DB_NAME")
 
-
-df = pd.read_sql_query("SELECT * FROM db_1.tMisto", connection)
-df2 = pd.read_sql_query("SELECT * FROM db_2_copy.tMisto", connection)
+df = to_dataframe("SELECT * FROM db_1.tMisto")
+df2 = to_dataframe("SELECT * FROM db_2_copy.tMisto")
 
 ```
