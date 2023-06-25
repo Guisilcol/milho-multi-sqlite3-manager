@@ -9,6 +9,8 @@ packages = [{include = "milho_multi_sqlite3_manager"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 sqlalchemy = "^2.0.16"
+sqlglot = "^16.3.1"
+pandas = "^2.0.2"
 
 
 [build-system]
