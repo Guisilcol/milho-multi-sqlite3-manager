@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="multisqlite3manager",
-    version="0.1",
+    version="0.0.2",
     packages=find_packages(),
     author="Guilherme dos Santos Magalhães",
     author_email="silcol455@gmail.com",
