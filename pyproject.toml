@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Guilherme S. Magalhães <40049979+Guisilcol@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "milho_multi_sqlite3_manager"}]
+packages = [{include = "multisqlite3manager"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
