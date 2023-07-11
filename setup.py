@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="multisqlite3manager",
-    version="0.0.2",
+    name="dataenvmanager",
+    version="0.0.3",
     packages=find_packages(),
     author="Guilherme dos Santos Magalhães",
     author_email="silcol455@gmail.com",
-    description="SQLite3 Database Multiple File Manager",
+    description="Manage your data environments with ease.",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/Guisilcol/milho-multi-sqlite3-manager",

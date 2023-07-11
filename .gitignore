@@ -1,3 +1,7 @@
 /workspace
 /.venv
 /.vscode
+
+*.tar.gz
+*.whl
+*.pyc
