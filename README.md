@@ -44,3 +44,40 @@ df = sm.from_sql_to_dataframe(stmt)
 log(df, True)
 
 ```
+
+Log output:
+
+```
+> Value of enviroment variable MULTISQLITE3MANAGER_SQLITE_FOLDER_PATH: E:\Databases
+> Value of enviroment variable MULTISQLITE3MANAGER_FILE_MANAGER_ROOT_PATH: E:\Root File Manager
+> Printing the list of sqlite3 databases in the default folder
+->  teste_10  -  E:\Databases\teste_10.db
+->  teste_10_2  -  E:\Databases\teste_10_2.db
+->  teste_3  -  E:\Databases\teste_3.db
+->  teste_4  -  E:\Databases\teste_4.db
+->  teste_5  -  E:\Databases\teste_5.db
+->  teste_6  -  E:\Databases\teste_6.db
+->  teste_7  -  E:\Databases\teste_7.db
+->  teste_8  -  E:\Databases\teste_8.db
+->  teste_8_2  -  E:\Databases\teste_8_2.db
+->  teste_9  -  E:\Databases\teste_9.db
+->  teste_9_2  -  E:\Databases\teste_9_2.db
+->  test_db  -  E:\Databases\test_db.db
+->  test_db_2  -  E:\Databases\test_db_2.db
+> Printing the list of tables in the database 'teste_3' in the default folder
+->  teste_3  -  tTeste
+->  teste_3  -  tMisto
+->  teste_3  -  tXistoMisto
+->  teste_3  -  tXistoLgpdChora
+->  teste_3  -  teste
+->  teste_3  -  tTesteTabela
+> Creating a connection to the database "teste_3" in the default folder
+> test_db_conn: <sqlalchemy.engine.base.Connection object at 0x000001E21CA9E990>
+> Querying the database "teste_3" and "teste_4" in the default folder
+> SQL: select * from teste_3.tMisto UNION ALL select * from teste_4.tMisto
+  coluna1 coluna2              coluna3  coluna4
+0   milho     gui  2016-10-23 00:00:00        1
+1  lukito  kenedo  2016-10-23 00:00:00        2
+2   milho     gui  2016-10-23 00:00:00        1
+3  lukito  kenedo  2016-10-23 00:00:00        2
+```
